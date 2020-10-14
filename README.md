@@ -12,7 +12,7 @@ This app is built with:
 
 ## Installation Instructions
 
-- Play the [live version](https://someurl) _**or**_
+- Play the [live version](https://ga-demo.github.io/da-best-tic-tac-toe-eva/) _**or**_
 - Fork and clone or download this repository
 - Double click on the index.html to open it in the browser
 
