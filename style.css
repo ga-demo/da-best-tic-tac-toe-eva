@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --boardSize: 50vmin;
+  --primaryColor: deeppink;
+}
+
+body {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  height: 100vh;
+  justify-content: center;
+}
+
+button {
+  border: 0;
+  border-radius: 10rem;
+  background: var(--primaryColor);
+  color: white;
+  display: none;
+  font-size: 1.5rem;
+  padding: 1rem 1.75rem;
+}
+
+h1 {
+  font-family: 'Rock Salt';
+  line-height: 1.5;
+  max-width: var(--boardSize);
+  padding: 1rem;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+main {
+  text-align: center;
+}
+
+section {
+  height: var(--boardSize);
+  width: var(--boardSize);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  height: calc(100% / 3);
+  flex-basis: 33%;
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10vh;
+  cursor: pointer;
+}
+
+.box:nth-child(3n) {
+  border-right: none;
+}
+
+.box:nth-last-child(-1n + 3) {
+  border-bottom: none;
+}
+
+.box:not(.win):hover {
+  background-color: #eee;
+}
+
+.win {
+  background-color: var(--primaryColor);
+}
